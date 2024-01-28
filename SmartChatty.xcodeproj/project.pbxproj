@@ -18,6 +18,8 @@
 		6BFEAC5B2B5970EF00B52C72 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC5A2B5970EF00B52C72 /* HomeView.swift */; };
 		6BFEAC612B5DD17600B52C72 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC602B5DD17600B52C72 /* Config.swift */; };
 		6BFEAC632B5DD95500B52C72 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC622B5DD95500B52C72 /* Secrets.swift */; };
+		6BFEAC662B66CE5300B52C72 /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 6BFEAC652B66CE5300B52C72 /* EffectsLibrary */; };
+		6BFEAC692B66D35000B52C72 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6BFEAC682B66D35000B52C72 /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFEAC692B66D35000B52C72 /* ConfettiSwiftUI in Frameworks */,
 				6BFEAC4D2B532CDF00B52C72 /* OpenAI in Frameworks */,
+				6BFEAC662B66CE5300B52C72 /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +76,9 @@
 				6BFEAC3F2B53223600B52C72 /* ContentView.swift */,
 				6BFEAC5A2B5970EF00B52C72 /* HomeView.swift */,
 				6BFEAC602B5DD17600B52C72 /* Config.swift */,
+				6BFEAC622B5DD95500B52C72 /* Secrets.swift */,
 				6BFEAC412B53223700B52C72 /* Assets.xcassets */,
 				6BFEAC432B53223700B52C72 /* Preview Content */,
-				6BFEAC622B5DD95500B52C72 /* Secrets.swift */,
 			);
 			path = SmartChatty;
 			sourceTree = "<group>";
@@ -105,6 +109,8 @@
 			name = SmartChatty;
 			packageProductDependencies = (
 				6BFEAC4C2B532CDF00B52C72 /* OpenAI */,
+				6BFEAC652B66CE5300B52C72 /* EffectsLibrary */,
+				6BFEAC682B66D35000B52C72 /* ConfettiSwiftUI */,
 			);
 			productName = SmartChatty;
 			productReference = 6BFEAC3A2B53223600B52C72 /* SmartChatty.app */;
@@ -136,6 +142,8 @@
 			mainGroup = 6BFEAC312B53223600B52C72;
 			packageReferences = (
 				6BFEAC4B2B532CDF00B52C72 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				6BFEAC642B66CE5300B52C72 /* XCRemoteSwiftPackageReference "effects-library" */,
+				6BFEAC672B66D35000B52C72 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = 6BFEAC3B2B53223600B52C72 /* Products */;
 			projectDirPath = "";
@@ -394,6 +402,22 @@
 				minimumVersion = 0.2.5;
 			};
 		};
+		6BFEAC642B66CE5300B52C72 /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		6BFEAC672B66D35000B52C72 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -401,6 +425,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6BFEAC4B2B532CDF00B52C72 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
+		};
+		6BFEAC652B66CE5300B52C72 /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BFEAC642B66CE5300B52C72 /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+		6BFEAC682B66D35000B52C72 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BFEAC672B66D35000B52C72 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

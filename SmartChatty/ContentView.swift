@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
 
 struct ContentView: View {
     
     @StateObject var chatController: ChatController = .init()
     @State var string: String = ""
+    @State private var counter = 0
     
     var body: some View {
         NavigationStack {
@@ -32,10 +34,12 @@ struct ContentView: View {
                     Button {
                         self.chatController.sendNewMessage(content: string)
                         string = ""
+                        counter += 1
                     } label: {
                         Image(systemName: "paperplane.fill")
                             .foregroundColor(.blueShade)
                     }
+                    .confettiCannon(counter: $counter, colors: [.blueBubble, .blueShade])
                 }
                 .padding()
                 
