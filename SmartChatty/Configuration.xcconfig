@@ -1,17 +1,3 @@
-//
-//  Configuration.xcconfig
-//  SmartChatty
-//
-//  Created by Cristina on 2024-01-21.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://help.apple.com/xcode/#/dev745c5c974
-
-import Fundation
-
-
-API_KEY = "Your API Key"
 
 
 
