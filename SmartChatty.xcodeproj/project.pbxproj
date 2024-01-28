@@ -11,6 +11,13 @@
 		6BFEAC402B53223600B52C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC3F2B53223600B52C72 /* ContentView.swift */; };
 		6BFEAC422B53223700B52C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFEAC412B53223700B52C72 /* Assets.xcassets */; };
 		6BFEAC452B53223700B52C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFEAC442B53223700B52C72 /* Preview Assets.xcassets */; };
+		6BFEAC4D2B532CDF00B52C72 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 6BFEAC4C2B532CDF00B52C72 /* OpenAI */; };
+		6BFEAC512B54A88F00B52C72 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC502B54A88F00B52C72 /* MessageView.swift */; };
+		6BFEAC532B54A99200B52C72 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC522B54A99200B52C72 /* Message.swift */; };
+		6BFEAC552B54AAE400B52C72 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC542B54AAE400B52C72 /* ChatController.swift */; };
+		6BFEAC5B2B5970EF00B52C72 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC5A2B5970EF00B52C72 /* HomeView.swift */; };
+		6BFEAC612B5DD17600B52C72 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC602B5DD17600B52C72 /* Config.swift */; };
+		6BFEAC632B5DD95500B52C72 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFEAC622B5DD95500B52C72 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		6BFEAC3F2B53223600B52C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BFEAC412B53223700B52C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BFEAC442B53223700B52C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BFEAC502B54A88F00B52C72 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		6BFEAC522B54A99200B52C72 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6BFEAC542B54AAE400B52C72 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		6BFEAC5A2B5970EF00B52C72 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6BFEAC602B5DD17600B52C72 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		6BFEAC622B5DD95500B52C72 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFEAC4D2B532CDF00B52C72 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +66,15 @@
 			isa = PBXGroup;
 			children = (
 				6BFEAC3D2B53223600B52C72 /* SmartChattyApp.swift */,
+				6BFEAC542B54AAE400B52C72 /* ChatController.swift */,
+				6BFEAC522B54A99200B52C72 /* Message.swift */,
+				6BFEAC502B54A88F00B52C72 /* MessageView.swift */,
 				6BFEAC3F2B53223600B52C72 /* ContentView.swift */,
+				6BFEAC5A2B5970EF00B52C72 /* HomeView.swift */,
+				6BFEAC602B5DD17600B52C72 /* Config.swift */,
 				6BFEAC412B53223700B52C72 /* Assets.xcassets */,
 				6BFEAC432B53223700B52C72 /* Preview Content */,
+				6BFEAC622B5DD95500B52C72 /* Secrets.swift */,
 			);
 			path = SmartChatty;
 			sourceTree = "<group>";
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = SmartChatty;
+			packageProductDependencies = (
+				6BFEAC4C2B532CDF00B52C72 /* OpenAI */,
+			);
 			productName = SmartChatty;
 			productReference = 6BFEAC3A2B53223600B52C72 /* SmartChatty.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 6BFEAC312B53223600B52C72;
+			packageReferences = (
+				6BFEAC4B2B532CDF00B52C72 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 6BFEAC3B2B53223600B52C72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFEAC512B54A88F00B52C72 /* MessageView.swift in Sources */,
+				6BFEAC632B5DD95500B52C72 /* Secrets.swift in Sources */,
+				6BFEAC5B2B5970EF00B52C72 /* HomeView.swift in Sources */,
 				6BFEAC402B53223600B52C72 /* ContentView.swift in Sources */,
+				6BFEAC532B54A99200B52C72 /* Message.swift in Sources */,
+				6BFEAC612B5DD17600B52C72 /* Config.swift in Sources */,
 				6BFEAC3E2B53223600B52C72 /* SmartChattyApp.swift in Sources */,
+				6BFEAC552B54AAE400B52C72 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +307,10 @@
 				DEVELOPMENT_TEAM = UXC7U9N9AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartChatty/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +340,10 @@
 				DEVELOPMENT_TEAM = UXC7U9N9AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartChatty/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6BFEAC4B2B532CDF00B52C72 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6BFEAC4C2B532CDF00B52C72 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BFEAC4B2B532CDF00B52C72 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BFEAC322B53223600B52C72 /* Project object */;
 }

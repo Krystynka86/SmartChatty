@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Config {
+    
+    static let openAPIToken = Secrets.openAPIToken
+    
+}
+
+
+

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Message: Identifiable {
+    var id: UUID = .init()
+    var content: String
+    var isUser: Bool
+}

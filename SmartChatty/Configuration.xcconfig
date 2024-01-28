@@ -7,3 +7,12 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+import Fundation
+
+
+API_KEY = "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"
+
+
+
+
